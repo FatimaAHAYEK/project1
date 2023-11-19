@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Devoir</title>
+</head>
+
+<body>
+    <h1 class="title">Dictionnaire des termes informatiques </h1>
+    <div class="container">
+    
+    <!-- BOX 1      -->
+    <div class="container_list_princibale">
+
+        <div class="div1">
+            <div class="main_list_principale">
+                    <ul class="list_principale" id="list_principale" onclick="ajouterElement(event)">
+                    
+                        <li id="web" data-langage="Developpement web"><input type="button" value="⟏"> 
+                            Developpement Web 
+                            <!-- list des button des insert des list first ou last ou delete les elements  -->
+                            <input type="button"  class="insere_au_debut" value="⊷" >
+                            <input type="button" value="⋫" id="supprimer" onclick="supprimerElement('web')" >
+                            <input type="button" class="insere_au_fin" value="⊶">
+
+                            <ol class="sous_list_principale" >
+                                <li id="cote_client" data-langage="cote client"> <span> ⟏  </span> Cote client 
+                                    <span  class="insere_au_debut"> ⊷ </span>
+                                    <span  id="supprimer" onclick="supprimerElement('cote_client')" > ⋫ </span>
+                                    <span  class="insere_au_fin"> ⊶ </span>
+                                    <!-- ------------------------  -->
+                                    <ul class="sous_sous_list">
+                                        <li onclick="afficher_html()" data-langage="HTML">HTML 
+                                            <span  class="insere_au_debut"> ⊷ </span>
+                                            <span  id="supprimer" onclick="supprimerElement('cote_client')"> ⋫</span>
+                                            <span  class="insere_au_fin"> ⊶ </span> </li>
+                                        <li onclick="afficher_css()" data-langage="CSS">CSS 
+                                            <span  class="insere_au_debut"> ⊷ </span>
+                                            <span  id="supprimer" onclick="supprimerElement('cote_client')"> ⋫</span>
+                                            <span  class="insere_au_fin"> ⊶ </span> </li>
+                                        </li>
+                                        <li> ........ 
+                                            <span  class="insere_au_debut"> ⊷ </span>
+                                            <span  id="supprimer" onclick="supprimerElement('cote_client')"> ⋫</span>
+                                            <span  class="insere_au_fin"> ⊶ </span> </li>
+                                        </li>
+                                        <li>.............
+                                        <span  class="insere_au_debut"> ⊷ </span>
+                                            <span  id="supprimer"  onclick="supprimerElement('cote_client')"> ⋫</span>
+                                            <span  class="insere_au_fin"> ⊶ </span> </li>
+                                        </li>
+                                    </ul>
+                                
+
+                                </li>
+                                <li id="cote_serveur" data-langage="cote_serveur"><span> ⧁</span>Cote Serveur
+                                    <span  class="insere_au_debut"> ⊷ </span>
+                                    <span  id="supprimer" onclick="supprimerElement('cote_client')" > ⋫ </span>
+                                    <span  class="insere_au_fin"> ⊶ </span>
+                                </li>
+                        
+                                <li id="sup_...">
+                                    <span> ⧁</span> ................... 
+                                    <span  class="insere_au_debut" > ⊷ </span>
+                                    <span  id="supprimer" onclick="supprimerElement('sup_...')" > ⋫</span>
+                                    <span  class="insere_au_fin" > ⊶ </span>
+                                </li>
+                        
+                            </ol>
+                        </li>
+            
+                    </br>
+                        <li id="conception" data-langage="conception" ><span> ⧁</span>  Conception  
+                        <span  class="insere_au_debut"> ⊷ </span> 
+                        <span  id="supprimer" onclick="supprimerElement('conception')"> ⋫</span>
+                        <span  class="insere_au_fin"> ⊶ </span></li>
+                        </li> </br>
+                        <li id="BDD" data-langage="BDD"><span> ⧁</span>  BDD  
+                        <span  class="insere_au_debut"> ⊷ </span> 
+                        <span  id="supprimer" onclick="supprimerElement('BDD')"> ⋫</span>
+                        <span  class="insere_au_fin"> ⊶ </span>
+                        </li> </br>
+                        <li id="reseau" data-langage="Reseaux informatique"><span> ⧁</span>  Reseaux informatique 
+                        <span  class="insere_au_debut"> ⊷ </span> 
+                        <span  id="supprimer" onclick="supprimerElement('reseau')"> ⋫</span>
+                        <span  class="insere_au_fin"> ⊶ </span>
+                        </li></br>
+                        <li id="sup_sup" ><span> ⧁</span>  .......  
+                        <span  class="insere_au_debut"> ⊷ </span> 
+                        <span   id="supprimer" onclick="supprimerElement('sup_sup')"> ⋫</span>
+                        <span  class="insere_au_fin"> ⊶ </span></li> </li>
+                    
+                    </ul>  
+            </div>
+        </div>
+    </div>
+
+
+    <div class="flux">
+        <span id="echangerBtn" onclick="swapColumns()"> ⊲      ⊳ </span>
+    </div> 
+
+    <!-- BOX 2      -->
+             <div class="modul_css" id="modul_hmlt_2">
+                    <h1 id="title"> </h1>
+                    <div class="difenition_css">
+                        <p id="paragraph">  </p>
+
+                    </div>
+                    <div class="image_css">
+                        <img src="" id="image" alt="">
+                    </div>
+            </div> 
+   
+ </div>
+
+
+
+</div> 
+<div id="footer">
+    <p>nombre de mots : <span id="compter"></p>
+        <!-- <textarea id="text"></textarea> -->
+        <p> nombre de categorie : <span id="compter_cat"></span></p>
+        <p>nombre moyenne de categorie : <span id="compter_myenne"></span></p>
+        <p>nombre moyen de mots par categorie: <span id="compter_moyen_categorie"></span></p>
+</div>
+
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,120 @@
+body{
+    margin: 0 ;
+    padding : 0 ; 
+   
+
+}
+.title{
+    text-align: center ;
+}
+.container {
+    display: flex;
+ 
+}
+
+
+
+
+#list_principale , #modul_css{
+    margin: 5px;
+}
+
+
+.modul_css  {
+    /* float: right; */
+   
+    width: 700px;
+    height: 500px;
+    border : black solid 1px  ; 
+    border-radius: 15px 15px  ;
+    box-shadow: 20px 5px black;
+    padding: 10px ; 
+    margin: 50px ;
+    margin-left: 200px;
+}
+.modul_css  h1{
+    text-align: center;
+}
+
+.difenition_css{
+    border : black solid 1px  ; 
+    border-radius: 15px 15px ;
+    box-shadow: 2px 5px black;
+    padding: 10px ; 
+    margin: 50px ;
+}
+.image_css{
+    border : black solid 1px  ; 
+    border-radius: 15px 15px ;
+    box-shadow: 2px 5px black;
+    background-color: rgb(246, 242, 242);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    height: 200px;
+}
+.image_css img {
+    width: 120px ;
+    height: 180px ;
+    margin-top: 3%;
+    margin-left: 35%;
+}
+
+
+.container_list_princibale{
+    display: flex;
+    /* /* border: solid 3px black; */
+    margin-top: 70px;
+    margin-left: 20px;
+    
+    padding: 20px;
+    width: 700px;
+    height: 500px; 
+     float: right; 
+   
+    width: 700px;
+    height: 500px;
+    border : black solid 1px  ; 
+    border-radius: 15px 15px  ;
+    box-shadow: 20px 5px black;
+    padding: 10px ; 
+    margin-left: 20px ;
+    margin-top: 50px;
+
+}
+
+.container_list_princibale  .list_principale  {
+    list-style-type:upper-roman;
+ 
+    
+    
+  
+ 
+} 
+.container_list_princibale  .list_principale .sous_list_principale li{
+   
+    margin-top: 15px;
+    margin-bottom: 10px;
+   
+}
+.container_list_princibale  .list_principale .sous_list_principale span{
+    margin-right:15px ;
+    margin-left: 10px;
+}
+.container_list_princibale  .list_principale .sous_list_principale .sous_sous_list{
+
+    color: blue;
+    margin-left:30px ;
+    
+}
+
+
+.flux{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
+}
+#footer{
+    text-align: center;
+}
